@@ -1,0 +1,8 @@
+{
+  DO O FROM 1 TO 2 {
+    RT 40
+    FD 100
+    RT 140
+    FD 100
+  }
+}

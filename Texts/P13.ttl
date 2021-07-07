@@ -1,0 +1,6 @@
+{
+   DO A FROM ! TO 8 {
+      FD 30
+      LT 45
+   }
+}

@@ -1,0 +1,7 @@
+{
+  DO S FROM 1 TO 75 {
+    SET X := S 10 * ;
+    FD X
+    RT 144
+  }
+}

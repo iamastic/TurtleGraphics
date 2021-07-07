@@ -1,0 +1,6 @@
+{
+   DO A FROM 1 TO + {
+      FD 30
+      LT 45
+   }
+}

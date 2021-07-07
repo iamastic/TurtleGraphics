@@ -1,0 +1,6 @@
+{
+  DO O FROM 1 TO 360 {
+    RT 1
+    FD 3
+  }
+}

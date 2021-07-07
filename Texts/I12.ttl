@@ -1,0 +1,7 @@
+{
+  DO L FROM 1 TO 400 {
+    SET C := L 50 + ;
+    FD C
+    RT 90.911
+  }
+}

@@ -1,0 +1,17 @@
+{
+  DO A FROM 1 TO 120 {
+    FD 200
+    RT 61
+    FD 200
+    RT 61
+    FD 200
+    RT 61
+    FD 200
+    RT 61
+    FD 200
+    RT 61
+    FD 200
+    RT 61
+    RT 11.1111
+  }
+}
