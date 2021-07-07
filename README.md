@@ -2,6 +2,8 @@
 Created a parser for Logo Turtle Programming. Alongside this, I created a basic replica of the Turtle Graphics using SDL2. 
 
 ## Instructions
+
+### For the Parser
 * Type: 'make parse' for Production Output.
 * Then type 'make runParse'.
 
@@ -11,6 +13,7 @@ Created a parser for Logo Turtle Programming. Alongside this, I created a basic 
 * Type: 'make parse_v' for Output with Valgrind.
 * Then type, make runParse_v.
 
+### For the Interpreter (Graphic Capabilities must be available)
 * Type: 'make interp' for Output via SDL.
 * Then type, make runInterp.
 
