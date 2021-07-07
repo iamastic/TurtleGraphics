@@ -1,0 +1,94 @@
+Testing Strategy:
+..........................................................
+
+-- For the Parser --
+
+White Box Testing: 
+
+See function test() in parsing.c. Assert testing was conducted on the following functions: isNumber, isLetter and isOp. 
+Function varNum has not been tested as it is simply a wrapper function to consolidate the results of isNumber and isLetter.
+
+Black Box Testing:
+
+All remaining functions have been tested through the creation and application of incorrect Turtle (.ttl) files (P1 - P28).
+In order to test these, please do the following: 
+
+Type: make parse_s (to compile with sanitize flags on).
+Type: make P1.
+
+Repeat with P2, P3, P4...and so on. 
+
+P1: Missing an opening bracket.
+P2: Missing an instruction after the opening bracket.
+P3: Missing a variable or number after the instruction.
+P4: Incorrect variable or number after instruction.
+P5: Misspelt 'DO'.
+P6: Misspelt 'FROM'.
+P7: Misspelt 'TO'.
+P8: Misspelt 'FD'.
+P9: Misspelt 'LT'.
+P10: Misspelt 'RT'.
+P11: Incorrect variable after 'DO'.
+P12: Incorrect variable after 'DO'.
+P13: Incorrect variable/number after 'FROM'.
+P14: Incorrect variable/number after 'TO'.
+P15: Misspelt 'SET'.
+P16: Incorrect ':=' symbol.
+P17: Incorrect ';' symbol.
+P18: Incorrect variable after 'SET'.
+P19: Incorrect variable after 'SET'.
+P20: Too many closing brackets.
+P21: Missing a closing bracket.
+P22: More than one opening bracket.
+P23: Missing a bracket after 'DO' statement.
+P24: Missing variable or number after 'LT'.
+P25: Incorrect variable or number after 'LT'.
+P26: Missing variable or number after 'RT'.
+P27: Incorrect variable or number after 'RT'.
+P28: Empty file.
+
+..........................................................
+
+-- For the Interpreter --
+
+White Box Testing: 
+See function test() in interp.c. 
+Assert testing was conducted on the following functions: convertToRadians, getXCoordinate and getYCoordinate. 
+Other functions such as isLetter and isNumber have been tested parsing.c.
+
+Black Box Testing:
+Similar to the testing of the Parser, a collection of .ttl files have been applied to the Interpreter to create certain shapes. 
+Further testing was conducted on the Polish Notation structure of the interpreter. 
+
+- Polish Notation Structure:
+Type: make interp
+Type: make I1
+
+Repeat with I2 and I3.
+
+I1: Stack Underflow (Too few items on stack to perform the operation).
+I2: Stack Overflow (Items have been left on the stack).
+I3: Incorrect Format.
+
+- Basic Shapes: 
+Type: make interp
+Type: make shapes
+
+Close window after each shape to view the next one. 
+
+The shapes are: Square, Triangle, Pentagon, Hexagon, Octagon, Rhombus and Circle.
+The idea is that if the interpreter is able to successfully build basic shapes, then it should be able to successfully build more complex shapes.
+
+- Complex Shapes:
+Type: make interp
+Type: make fancy
+
+Close window after each shape to view the next one.
+
+I9.ttl and I10.ttl used instructions from: https://github.com/csnwc/Data/tree/main/Turtle
+ 
+I11.ttl and I12.ttl use modified instructions from: https://www.instructables.com/Easy-Designs-Turtle-Graphics-Python/
+
+I15.ttl and I16.ttl use modified instructions from: https://michael0x2a.com/blog/turtle-examples
+
+ 

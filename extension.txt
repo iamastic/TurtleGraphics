@@ -1,0 +1,54 @@
+About the Extension:
+..........................................................
+
+For the extension, I decided to work on an SDL aspect of the program. As a result, the program does the following:
+
+Upon typing: make extension
+	and: make runExtension
+**Note: sometimes it may not compile, so try: make -B extension
+
+A blank window will pop up with a black background. You are able to type in the command line. The instructions you input will be displayed on the screen.
+
+Here are a few key things to know:
+1) You must begin typing for it to initiate. You console should clear and whatever you type will be displayed.
+2) Please do not click outside the SDL window as this will interfere with what you type.
+3) You do not need the opening and closing braces of the program, these have been included for you (with the exception of the DO statement).
+4) Maintain spaces between each input (as you would in a .ttl file).
+5) Pressing the ENTER key will take you to a new line.
+6) Pressing the TAB key will submit your instructions and draw them.
+7) You can then add more instructions, or close the SDL window to exit the program.
+8) The DO instruction set must be fully written (with brackets) BEFORE hitting TAB. Pressing TAB earlier will not execute the instruction. Pressing ENTER is fine.
+   For example, the following will work:
+
+DO A FROM 1 TO 8 {
+FD 30
+RT 45
+}
+*user presses TAB*
+
+However, the following will NOT work:
+
+DO A FROM 1 TO 8 {
+*user presses TAB*
+
+The same applies to nested loops.
+
+9) Other instructions must follow the same; please always enter a full instruction and then hit TAB. For example, the following will work:
+
+FD 30
+*user presses TAB*
+FD 100
+*user presses TAB*
+
+However, the following will NOT work:
+FD
+*user presses TAB*
+30
+*user presses TAB*
+
+10) You are able to backspace (even after hitting the ENTER key).
+11) After closing the SDL Window, you will find a .txt file under the name of Turtle.txt in the Extension directory.
+    This file includes the instructions you typed in to create your cool designs!
+12) Your file will be formatted the same way you typed in the command.
+    For example, if you decide to type everything on one line, it will appear that way in the Turtle.txt.
+    Whereas if you use newline/enter key, it will appear that way in the Turtle.txt.
